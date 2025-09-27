@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Макс — Портфолио</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav wrap">
+      <a href="#portfolio">Портфолио</a>
+      <a href="#about">Обо мне</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Макс</h1>
+      <p>портфолио художника</p>
+    </div>
+    <div class="hero-bg">
+      <img src="images/cover.jpg" alt="Обложка — ключевая работа">
+    </div>
+  </section>
+
+  <main>
+    <section id="portfolio" class="gallery wrap">
+      <figure>
+        <img src="images/art1.jpg" alt="Работа 1" data-full="images/art1-large.jpg">
+        <figcaption>Работа 1, 2024</figcaption>
+      </figure>
+      <figure>
+        <img src="images/art2.jpg" alt="Работа 2" data-full="images/art2-large.jpg">
+        <figcaption>Работа 2, 2024</figcaption>
+      </figure>
+      <figure>
+        <img src="images/art3.jpg" alt="Работа 3" data-full="images/art3-large.jpg">
+        <figcaption>Работа 3, 2023</figcaption>
+      </figure>
+    </section>
+
+    <section id="about" class="wrap about">
+      <h2>Обо мне</h2>
+      <p>Я — художник, работаю с цифровой графикой, люблю экспериментировать со стилем. В этом портфолио собраны мои последние работы.</p>
+    </section>
+
+    <section id="contacts" class="wrap contacts">
+      <h2>Контакты</h2>
+      <p>📧 <a href="mailto:your@email.com">your@email.com</a></p>
+      <p>✦ <a href="https://t.me/yourhandle" target="_blank">Telegram</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>© <span id="year"></span> Макс</p>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lb-close">✕</button>
+    <img class="lb-image" alt="">
+    <p class="lb-caption"></p>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
